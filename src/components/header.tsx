@@ -1,13 +1,16 @@
-import { Search, ShoppingBag } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { Search, ShoppingBag } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export function Header() {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-5">
-        <Link href="/" className="text-2xl font-extrabold">
-          devstore
+        <Link
+          href="/"
+          className="flex gap-1 items-baseline text-2xl font-extrabold"
+        >
+          devstore <div className="w-2 h-2 bg-violet-400 rounded-full" />
         </Link>
 
         <form className="flex w-[320px] items-center gap-3 rounded-full bg-zinc-900 px-5 py-3 ring-zinc-700">
